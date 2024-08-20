@@ -24,4 +24,4 @@ This generator tries to convert everything inside `test/fixtures` to seed files.
 
 If you run `rails db:seed` Oaken will run all seeds defined in `Oaken.prepare`, in this case `seed :accounts`. 
 
-As the gem uses the same seed files to both test and dev env, the same data will be used to populate test and dev database.
+The gem uses the same seed files for both test and dev environments, so the same data will populate the test and dev databases.
