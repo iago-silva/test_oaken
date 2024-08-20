@@ -1,24 +1,21 @@
-# README
+Example test using Oaken -> [test/models/account_test.rb](https://github.com/iago-silva/test_oaken/blob/main/test/models/account_test.rb)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Where the `accounts.iago` has been created? -> [db/seeds/accounts/iago.rb](https://github.com/iago-silva/test_oaken/blob/main/db/seeds/accounts/iago.rb).
 
-Things you may want to cover:
+# Configuration
 
-* Ruby version
+Just need to put 
 
-* System dependencies
+```ruby
+Oaken.prepare do
+  seed :accounts
+end
+```
 
-* Configuration
+inside `seeds.rb` and the gem will load `db/seeds/accounts/*.rb`
 
-* Database creation
+# Generator
 
-* Database initialization
+I tried to use `rails generate oaken:convert:fixtures` but didn't work well.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This generator tries to convert everything inside `test/fixtures` to seed files.
