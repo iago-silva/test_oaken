@@ -1,0 +1,1 @@
+accounts.create :iago, name: 'iago'
