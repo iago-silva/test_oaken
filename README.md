@@ -19,3 +19,9 @@ inside `seeds.rb` and the gem will load `db/seeds/accounts/*.rb`
 I tried to use `rails generate oaken:convert:fixtures` but didn't work well.
 
 This generator tries to convert everything inside `test/fixtures` to seed files.
+
+# Development env
+
+If you run `rails db:seed` Oaken will run all seeds defined in `Oaken.prepare`, in this case `seed :accounts`. 
+
+As the gem uses the same seed files to both test and dev env, the same data will be used to populate test and dev database.
